@@ -1,5 +1,5 @@
 import './app.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import {
 	BrowserRouter as Router,
@@ -20,6 +20,7 @@ import {
 	faTimesCircle,
 	faUserLock,
 } from '@fortawesome/free-solid-svg-icons';
+import { login } from './pages/Auth/actions';
 
 import Auth from './pages/Auth';
 import Main from './pages/Main';
@@ -40,7 +41,11 @@ library.add(
 	faUserLock
 );
 
-const App = ({ user, errors, month }) => {
+const App = ({ dispatch, user, errors, month }) => {
+	useEffect(() => {
+		dispatch(login({ email: 'admin@admin.com', password: 'admin' }));
+	}, [dispatch]);
+
 	return (
 		<Router>
 			<Switch>
