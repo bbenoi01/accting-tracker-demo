@@ -1,6 +1,6 @@
 {
-	"short_name": "Katana Accounting",
-	"name": "Digital Katana Accounting Tracker",
+	"short_name": "Accounting Demo",
+	"name": "Demo Accounting Tracker",
 	"icons": [
 		{
 			"src": "bb-icon.PNG",
