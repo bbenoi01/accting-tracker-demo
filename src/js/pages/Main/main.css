@@ -1,0 +1,47 @@
+.main {
+	color: whitesmoke;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-card {
+	border: 2px solid indigo;
+	width: 80%;
+	text-align: center;
+}
+
+.main-card-header {
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.main-select-container {
+	position: absolute;
+	left: 15px;
+	text-align: center;
+}
+
+.main-new-year-btn {
+	position: absolute;
+	top: 20%;
+	right: 15px;
+	padding: 5px;
+}
+
+.main-card-body {
+	padding: 5px 0;
+}
+
+.main-card-table-headers,
+.main-card-table-data {
+	display: flex;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.section {
+	flex: 3;
+	padding: 5px;
+}

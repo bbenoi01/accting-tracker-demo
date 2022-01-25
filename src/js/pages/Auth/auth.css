@@ -1,0 +1,59 @@
+.auth {
+	color: whitesmoke;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth-card {
+	border: 3px solid indigo;
+	border-radius: 50%;
+	padding: 35px;
+	text-align: center !important;
+}
+
+.auth-title {
+	margin-bottom: 15px;
+}
+
+.auth-icon {
+	color: green;
+}
+
+#auth-form {
+	margin: auto;
+	margin-bottom: 10px;
+	width: 65%;
+}
+
+.auth-form-container {
+	margin-bottom: 1rem !important;
+}
+
+.auth-input {
+	padding: 5px;
+	margin: 10px auto;
+}
+
+.auth-submit:hover {
+	background-color: green;
+}
+
+.auth-forgot-password-link {
+	color: steelblue;
+	font-size: 0.8rem;
+}
+
+.auth-switch {
+	position: absolute;
+	top: 5rem;
+	right: 1.25rem;
+	background-color: transparent;
+	color: transparent;
+}
+
+.auth-switch:hover {
+	background-color: indigo;
+	color: whitesmoke;
+}

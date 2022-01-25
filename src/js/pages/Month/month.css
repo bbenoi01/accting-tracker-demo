@@ -1,0 +1,149 @@
+.month {
+	color: whitesmoke;
+	padding: 2em 1em;
+}
+
+.month-header {
+	margin-bottom: 20px;
+}
+
+.month-title {
+	text-align: center;
+}
+
+.month-overview {
+	padding: 0 30px;
+	margin-bottom: 20px;
+}
+
+.overview-row-1,
+.overview-row-2,
+.overview-row-3 {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.overview-row-1,
+.overview-row-3 {
+	justify-content: space-between;
+}
+
+.overview-row-2 {
+	justify-content: flex-end;
+}
+
+.sbal,
+.rev,
+.exp,
+.ebal,
+.profit {
+	display: flex;
+}
+
+.overview-row-label {
+	margin-right: 5px;
+	font-size: 0.8em;
+}
+
+.overview-start-bal-input,
+.month-entry-card-input {
+	width: 3em;
+	padding: 2px 10px;
+	border: none;
+}
+
+.overview-start-bal-input {
+	text-align: start;
+	margin-right: 5px;
+}
+
+.overview-start-bal-input-btn-hidden {
+	display: none;
+}
+
+.month-body-full {
+	display: none;
+}
+
+.month-entry-select-container {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.month-entry-card {
+	border: 3px solid indigo;
+	text-align: center;
+}
+
+.month-entry-card-header {
+	padding: 10px;
+	position: relative;
+}
+
+.month-entry-card-header.rev-h {
+	background-color: green;
+}
+
+.month-entry-card-header.exp-h {
+	background-color: red;
+}
+
+.month-entry-card-add-icon {
+	position: absolute;
+	top: 12px;
+	right: 15px;
+	cursor: pointer;
+}
+
+.month-entry-card-body {
+	padding: 5px 0;
+}
+
+.month-entry-card-table-headers,
+.month-entry-card-table-data {
+	display: flex;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.section {
+	display: flex;
+	justify-content: center;
+	flex: 3;
+	padding: 5px;
+}
+
+.month-entry-card-input {
+	width: 100%;
+}
+
+.month-entry-card-footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: dodgerblue;
+	padding: 5px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.month-body-mobile {
+		display: none;
+	}
+
+	.month-body-full {
+		display: flex;
+	}
+
+	.month-revenue,
+	.month-expenses {
+		flex: 6;
+		padding: 10px;
+	}
+
+	.month-entry-card-input {
+		width: 100%;
+	}
+
+	.section {
+		width: 100%;
+	}
+}
