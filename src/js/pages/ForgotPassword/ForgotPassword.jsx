@@ -1,5 +1,6 @@
 import './forgotPassword.css';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { connect, useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { types } from '../../types';
@@ -74,6 +75,12 @@ const ForgotPassword = ({ errors, success }) => {
 					</form>
 				</div>
 			</div>
+			<Link to='/' className='back-btn'>
+				<FontAwesomeIcon
+					icon={'arrow-alt-circle-left'}
+					className='back-btn-icon'
+				/>
+			</Link>
 		</div>
 	);
 };
